@@ -1,0 +1,25 @@
+n=int(input())
+arr=list(map(int,input().split()))
+j=n-1
+a=d=i=0
+turn=True
+while i<=j:
+    if turn==True:
+        if arr[i]>arr[j]:
+            a+=arr[i]
+            turn=False
+            i+=1
+        else:
+            a+=arr[j]
+            j-=1
+            turn=False
+    else:
+        if arr[i]>arr[j]:
+            d+=arr[i]
+            i+=1
+            turn=True
+        else:
+            d+=arr[j]
+            j-=1
+            turn=True
+print(a,d)
