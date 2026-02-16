@@ -1,0 +1,10 @@
+s=input()
+arr=[x for x in range(97,123)]
+j='a'
+count=0
+for i in range(len(s)):
+    x=abs((arr.index(ord(j)))-(arr.index(ord(s[i]))))
+    y=26-x
+    count+=min(x,y)
+    j=s[i]
+print(count)
