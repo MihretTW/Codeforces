@@ -1,0 +1,13 @@
+n=int(input())
+arr1=[]
+arr2=[]
+count=0
+for _ in range(n):
+    a,b=map(int,input().split())
+    arr1.append(a)
+    arr2.append(b)
+for num in arr1:
+    if num in arr2:
+        count+=arr2.count(num)
+print(count)
+   
