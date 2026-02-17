@@ -1,0 +1,12 @@
+y,w=map(int,input().split())
+x=6-max(y,w)+1
+if 6%x==0:
+    x=6//x
+    print("1"+"/"+str(x))
+else:
+    if x%2==0:
+        print(str(x//2)+"/"+"3")
+    else:
+        print(str(x)+"/6")
+
+
