@@ -1,0 +1,16 @@
+k,t=map(int,input().split())
+i=1
+count=0
+while True:
+    if (i*k)%10==0:
+        count+=1
+        print(count)
+        break
+    elif (i*k-t)%10==0:
+        count+=1
+        print(count)
+        break
+    else:
+        i+=1
+        count+=1
+        
