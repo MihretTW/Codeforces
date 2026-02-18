@@ -1,0 +1,12 @@
+n=int(input())
+arr=list(map(int,input().split()))
+m=int(input())
+for i in range(m):
+    x,y=map(int,input().split())
+    if 0<=(x-2)<n:
+        arr[x-2]+=(y-1)
+    if 0<=x<n:
+        arr[x]+=arr[x-1]-y
+    arr[x-1]=0
+for i in range(n):
+    print(arr[i])
